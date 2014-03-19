@@ -4,6 +4,21 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
+    //js hint
+    jshint: {
+      // define the files to lint
+      files: ['gruntfile.js', 'js/*.js', 'test/*.js'],
+      // configure JSHint (documented at http://www.jshint.com/docs/)
+      options: {
+          // more options here if you want to override JSHint defaults
+        globals: {
+          jQuery: true,
+          p: true,
+          module: true
+        }
+      }
+    },
+
     jasmine: {
       pivotal: {
         src: 'js/*.js',
@@ -13,6 +28,7 @@ module.exports = function(grunt) {
         }
       }
     },
+
     karma: {
       unit: {
         configFile: 'karma.conf.js',
@@ -21,10 +37,15 @@ module.exports = function(grunt) {
     },
 
     watch: {
-            karma: {
-              files: ['js/*.js', 'test/*.js'],
-              tasks: ['karma:unit:run']
-          }
+      karma: {
+        files: ['js/*.js', 'test/*.js'],
+        tasks: ['karma:unit:run', 'jshint']
+      },
+      //sass changes update navigator
+      css:{
+        files: ['sass/*.scss'],
+        tasks: ['sass'],
+      } 
     },
 
     uglify: {
@@ -35,6 +56,27 @@ module.exports = function(grunt) {
         src: 'src/<%= pkg.name %>.js',
         dest: 'build/<%= pkg.name %>.min.js'
       }
+    },
+
+    //sass
+    sass: {
+      dist: {                            
+        files: [{                         
+          expand: true,// enable mapping dinamically
+          cwd: 'sass', //set root directory
+          src: ['*.scss'],
+          dest: '../css',
+          ext: '.css'
+        }]  
+      }
+    },
+
+    compass: {                  // Task
+      dist: {                   // Target
+        options: {              // Target options
+            config: 'config.rb'   //load existing config
+          }
+      }
     }
   });
 
@@ -42,8 +84,22 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-karma');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
 
   // Default task(s).
-  grunt.registerTask('default', [/*'jasmine',*/ 'karma:unit', 'watch']);
+  grunt.registerTask('default', [
+    'sass',
+    'compass',
+    'karma:unit',
+    'watch'
+  ]);
+
+  grunt.registerTask('test', [
+    'jshint',
+    'karma:unit',
+    'watch'
+  ]);
 
 };
