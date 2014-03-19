@@ -9,8 +9,12 @@ describe("redirect js", function() {
   });
 
   it("checkmediamoudule shuold be an object", function() {
-    expect(typeof checkMediaModule).toEqual(true);
+    expect(typeof checkMediaModule).toEqual('object');
   });
+
+  it("j", function(){
+  	expect(typeof j()).toEqual('function');
+  })
 
   
 });
