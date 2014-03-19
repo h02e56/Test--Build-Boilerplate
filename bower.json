@@ -1,0 +1,21 @@
+{
+  "name": "mobile",
+  "version": "0.0.0",
+  "authors": [
+    "Josep Boada <jboada@keclab.com>"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "js/vendor/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
