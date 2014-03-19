@@ -1,1 +1,5 @@
+#npm
 node_modules
+
+#bower
+js/vendor/bower_components
