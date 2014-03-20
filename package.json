@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "josep boada",
-  "repository":"",
+  "repository":{
+    "git": "https://github.com/h02e56/Test--Build-Boilerplate.git",
   "license": "MIT",
   "devDependencies": {
     "grunt": "^0.4.4",
