@@ -5,7 +5,7 @@ module.exports = function(config) {
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
-    basePath: '',
+    basePath: 'src/',
 
 
     // frameworks to use
@@ -32,7 +32,7 @@ module.exports = function(config) {
       // source files, that you wanna generate coverage for
       // do not include tests or libraries
       // (these files will be instrumented by Istanbul)
-      'src/*.js': ['coverage']
+      'js/*.js': ['coverage']
     },
 
 
@@ -55,9 +55,6 @@ module.exports = function(config) {
     logLevel: config.LOG_INFO,
 
 
-    // enable / disable watching file and executing tests whenever any file changes
-    autoWatch: true,
-
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
@@ -71,7 +68,7 @@ module.exports = function(config) {
     // optionally, configure the reporter
     coverageReporter: {
       type : 'html',
-      dir : 'coverage/'
+      dir : 'coverage'
     }
   });
 };

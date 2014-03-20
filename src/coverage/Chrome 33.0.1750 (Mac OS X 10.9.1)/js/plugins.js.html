@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for All files</title>
+    <title>Code coverage report for js/plugins.js</title>
     <meta charset="utf-8">
 
-    <link rel="stylesheet" href="prettify.css">
+    <link rel="stylesheet" href="../prettify.css">
 
     <style>
         body, html {
@@ -196,50 +196,107 @@
 </head>
 <body>
 <div class="header high">
-    <h1>Code coverage report for <span class="entity">All files</span></h1>
+    <h1>Code coverage report for <span class="entity">js/plugins.js</span></h1>
     <h2>
         
-        Statements: <span class="metric">100% <small>(0 / 0)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Statements: <span class="metric">100% <small>(10 / 10)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Branches: <span class="metric">100% <small>(0 / 0)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">75% <small>(3 / 4)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Functions: <span class="metric">100% <small>(0 / 0)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">50% <small>(1 / 2)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Lines: <span class="metric">100% <small>(0 / 0)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">100% <small>(10 / 10)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"></div>
+    <div class="path"><a href="../index.html">All files</a> &#187; <a href="index.html">js/</a> &#187; plugins.js</div>
 </div>
 <div class="body">
-<div class="coverage-summary">
-<table>
-<thead>
-<tr>
-   <th data-col="file" data-fmt="html" data-html="true" class="file">File</th>
-   <th data-col="pic" data-type="number" data-fmt="html" data-html="true" class="pic"></th>
-   <th data-col="statements" data-type="number" data-fmt="pct" class="pct">Statements</th>
-   <th data-col="statements_raw" data-type="number" data-fmt="html" class="abs"></th>
-   <th data-col="branches" data-type="number" data-fmt="pct" class="pct">Branches</th>
-   <th data-col="branches_raw" data-type="number" data-fmt="html" class="abs"></th>
-   <th data-col="functions" data-type="number" data-fmt="pct" class="pct">Functions</th>
-   <th data-col="functions_raw" data-type="number" data-fmt="html" class="abs"></th>
-   <th data-col="lines" data-type="number" data-fmt="pct" class="pct">Lines</th>
-   <th data-col="lines_raw" data-type="number" data-fmt="html" class="abs"></th>
-</tr>
-</thead>
-<tbody></tbody>
-</table>
-</div>
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">22</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">22</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// Avoid `console` errors in browsers that lack a console.
+(function() {
+    var method;
+    var noop = <span class="fstat-no" title="function not covered" >function () {</span>};
+    var methods = [
+        'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
+        'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
+        'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
+        'timeStamp', 'trace', 'warn'
+    ];
+    var length = methods.length;
+    var console = (window.console = window.console || <span class="branch-1 cbranch-no" title="branch not covered" >{})</span>;
+&nbsp;
+    while (length--) {
+        method = methods[length];
+&nbsp;
+        // Only stub undefined methods.
+        if (!console[method]) {
+            console[method] = noop;
+        }
+    }
+}());
+&nbsp;
+// Place any jQuery/helper plugins in here.
+&nbsp;</pre></td></tr>
+</table></pre>
+
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Thu Mar 20 2014 23:43:57 GMT+0100 (CET)</div>
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Thu Mar 20 2014 23:52:47 GMT+0100 (CET)</div>
 </div>
 
-<script src="prettify.js"></script>
+<script src="../prettify.js"></script>
 
 <script src="http://yui.yahooapis.com/3.6.0/build/yui/yui-min.js"></script>
 <script>

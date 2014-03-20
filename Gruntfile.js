@@ -45,18 +45,17 @@ module.exports = function(grunt) {
       build: {
         background: false,
       }
-
     },
 
     watch: {
       karma: {
         files: [
-          'Gruntfile.js',
+          //'Gruntfile.js',
           '<%= path.src %>/js/*.js',
           'test/*.js'
           ],
         tasks: [
-          'karma:unit:run'
+          'karma:unit'
           ]
       },
       //sass changes update navigator
