@@ -1,6 +1,6 @@
 {
-  "name": "mobile",
-  "version": "0.0.0",
+  "name": "Test-Build-Boilerplate",
+  "version": "0.0.1",
   "description": "Boilerplate for develop, test and build using Grunt",
   "main": "mobile.js",
   "scripts": {
