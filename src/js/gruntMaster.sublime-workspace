@@ -1,0 +1,301 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"js",
+				"jshint"
+			],
+			[
+				"che",
+				"checkMediaModule"
+			],
+			[
+				"l",
+				"listeners"
+			],
+			[
+				"get",
+				"getPaths"
+			],
+			[
+				"ma",
+				"matchesUserScreen"
+			],
+			[
+				"f",
+				"for	for (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"ip",
+				"ipadLanscape"
+			],
+			[
+				"media",
+				"medias"
+			],
+			[
+				"mat",
+				"matches"
+			],
+			[
+				"c",
+				"checkmedia"
+			],
+			[
+				"di",
+				"dir"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"s",
+				"showOld"
+			],
+			[
+				"ra",
+				"random"
+			],
+			[
+				"to",
+				"toBePlaying"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"p",
+				"Package Control: List Packages"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/josep/Documents/work/node/gruntMaster/package.json",
+		"/Users/josep/Documents/work/node/gruntMaster/karma.conf.js",
+		"/Users/josep/Documents/work/node/gruntMaster/Gruntfile.js",
+		"/Users/josep/Documents/work/node/gruntMaster/sass/screen.scss",
+		"/Users/josep/Documents/work/node/gruntMaster/css/screen.css",
+		"/Users/josep/Documents/work/node/gruntMaster/config.rb",
+		"/Users/josep/Documents/work/node/gruntMaster/.gitignore",
+		"/Users/josep/Documents/work/node/gruntMaster/bower.json",
+		"/Volumes/home/MNAC/mobile/package.json",
+		"/Volumes/home/MNAC/mobile/js/mobile.js",
+		"/Volumes/home/MNAC/mobile/.gitignore",
+		"/Volumes/home/MNAC/mobile/Gruntfile.js",
+		"/Volumes/home/MNAC/mobile/karma.conf.js",
+		"/Volumes/home/MNAC/mobile/test/mobileSpec.js",
+		"/Volumes/home/MNAC/mobile/test/karma.conf.js",
+		"/Volumes/home/MNAC/mobile/js/vendor/bower_components/jasmine/README.md",
+		"/Volumes/home/MNAC/mobile/SpecRunner.html",
+		"/Users/josep/Desktop/mnac_zen alias",
+		"/Users/josep/Documents/work/keclient/grunt/mnac_zen/Gruntfile.js",
+		"/Users/josep/Documents/work/keclient/grunt/package.json",
+		"/Users/josep/Documents/grunt/Gruntfile.js",
+		"/Users/josep/Documents/work/node/gruntTest/Gruntfile.js",
+		"/Volumes/treballs/clientes/mnac/www/public_html/docroot/sites/all/themes/custom/mnac_zen/sass/styles-advanced-piece-search.scss",
+		"/Volumes/treballs/clientes/mnac/www/public_html/docroot/sites/all/themes/custom/mnac_zen/js/script.js",
+		"/Volumes/treballs/clientes/mnac/www/public_html/docroot/sites/all/themes/custom/mnac_zen/templates/flexslider-views--a-quick-look.tpl.php",
+		"/Volumes/treballs/clientes/mnac/www/public_html/docroot/sites/all/themes/custom/mnac_zen/templates/page.tpl.php",
+		"/Volumes/treballs/clientes/mnac/www/public_html/docroot/sites/all/modules/custom/mnac_adv_search/mnac_adv_search.module",
+		"/Users/josep/Documents/tiradardos/main.js",
+		"/Users/josep/Documents/form/main.js",
+		"/Users/josep/Documents/form/index.php",
+		"/Users/josep/Downloads/welovejs2014-paso-3/manifest.webapp",
+		"/Users/josep/Documents/firefoxOS/workshop/welovejs2014/welovejs2014-paso-2/js/app.js",
+		"/Users/josep/Documents/firefoxOS/workshop/welovejs2014/index.html",
+		"/Users/josep/Documents/firefoxOS/workshop/joe/manifest.webapp",
+		"/Users/josep/Documents/firefoxOS/workshop/josep",
+		"/Users/josep/Desktop/.josep.txt.swp",
+		"/Users/josep/Documents/grunt/package.json",
+		"/Users/josep/Documents/compass/styles.scss",
+		"/Users/josep/Documents/compass/styles.css",
+		"/Users/josep/Downloads/zen/STARTERKIT/sass-extensions/zen-grids/zen-grids.gemspec",
+		"/Users/josep/Documents/projects/node/gruntTest/Gruntfile.js",
+		"/Users/josep/Desktop/template.php",
+		"/Users/josep/Documents/projects/node/gruntTest/package.json",
+		"/Users/josep/Desktop/page.tpl.php",
+		"/Users/josep/Documents/projects/node/touch/bower_components/hammerjs/README.md",
+		"/Users/josep/Documents/projects/node/touch/.htaccess",
+		"/Users/josep/Documents/projects/node/touch/bower.json",
+		"/Users/josep/Documents/projects/node/touch/app.js",
+		"/Users/josep/Documents/projects/node/touch/package.json",
+		"/Users/josep/Documents/projects/node/touch/server.js",
+		"/Users/josep/josep.txt",
+		"/Users/josep/Documents/Documents"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"matchesUserScreen",
+			"(\"",
+			"checkmedia",
+			"all and ",
+			"el",
+			"}\n",
+			"'(min-width:768px) and (orientation:portrait)' : function()",
+			"screen",
+			"screen screen",
+			" console",
+			"\"",
+			"concat",
+			"pkg: grunt.file.readJSON('package.json'),\n		settings: {\n			dir: {\n                src: 'src',\n                dist: 'dist'\n            }	\n		},",
+			"'<%=",
+			"dest",
+			"}\n",
+			"watch",
+			"/**/*.js",
+			"src/",
+			"dist/",
+			"last",
+			"inve",
+			"search",
+			"value",
+			"){\n",
+			"parseInt(",
+			"n1",
+			"user",
+			"user_",
+			"key",
+			"zen",
+			"});",
+			"request"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.539437554658,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 217.0,
+	"status_bar_visible": true
+}

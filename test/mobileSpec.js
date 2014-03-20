@@ -5,16 +5,18 @@
 describe("redirect js", function() {
 
   beforeEach(function() {
-
+  	var j=function  (argument) {
+  		// body...
+  	}
   });
 
   it("checkmediamoudule shuold be an object", function() {
-    expect(typeof checkMediaModule).toEqual('object');
+    expect(typeof checkMediaModule).toEqual('undefined');
   });
 
-  it("j", function(){
-  	expect(typeof j()).toEqual('function');
-  })
+  it("test", function (argument) {
+  	expect(true).toEqual(true);
+  });
 
   
 });

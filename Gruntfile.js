@@ -2,7 +2,13 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
+    
     pkg: grunt.file.readJSON('package.json'),
+    
+    path : {
+      dist: 'dist',
+      src : "src" 
+    },
 
     //js hint
     jshint: {
@@ -21,7 +27,7 @@ module.exports = function(grunt) {
 
     jasmine: {
       pivotal: {
-        src: 'js/*.js',
+        src: '<%= path.src %>/js/*.js',
         options: {
           specs: 'test/*Spec.js',
           helpers: 'test/*Helper.js'
@@ -30,20 +36,32 @@ module.exports = function(grunt) {
     },
 
     karma: {
+      options : {
+        configFile: 'karma.conf.js' 
+      },
       unit: {
-        configFile: 'karma.conf.js',
         background: true
+      },
+      build: {
+        background: false,
       }
+
     },
 
     watch: {
       karma: {
-        files: ['js/*.js', 'test/*.js'],
-        tasks: ['karma:unit:run', 'jshint']
+        files: [
+          'Gruntfile.js',
+          '<%= path.src %>/js/*.js',
+          'test/*.js'
+          ],
+        tasks: [
+          'karma:unit:run'
+          ]
       },
       //sass changes update navigator
       css:{
-        files: ['sass/*.scss'],
+        files: ['<%= path.src %>/sass/*.scss'],
         tasks: ['sass'],
       } 
     },
@@ -53,8 +71,8 @@ module.exports = function(grunt) {
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
       },
       build: {
-        src: 'src/<%= pkg.name %>.js',
-        dest: 'build/<%= pkg.name %>.min.js'
+        src: '<%= path.src %>/js/*.js',
+        dest: '<%= path.dist %>/js/<%= pkg.name %>.min.js'
       }
     },
 
@@ -63,9 +81,9 @@ module.exports = function(grunt) {
       dist: {                            
         files: [{                         
           expand: true,// enable mapping dinamically
-          cwd: 'sass', //set root directory
+          cwd: '<%= path.src %>/sass', //set root directory
           src: ['*.scss'],
-          dest: '../css',
+          dest: '../<%= path.dist %>/css',
           ext: '.css'
         }]  
       }
@@ -97,9 +115,14 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask('test', [
-    'jshint',
+    //'jshint',
     'karma:unit',
     'watch'
   ]);
 
+  grunt.registerTask('build', [
+    'karma:build',
+    'uglify',
+    'sass'
+  ]);
 };
